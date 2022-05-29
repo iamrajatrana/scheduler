@@ -48,6 +48,10 @@ public class TimedTask {
         return new TimedTask(timedTask.getTask(), now, timedTask.getRepeatablePeriod(), timedTask.getRepeatablePeriodUnit());
     }
 
+    public void run() {
+        this.task.run();
+    }
+
     public TaskType getType() {
         return type;
     }
